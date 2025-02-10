@@ -13,9 +13,7 @@ body {
     height: 100vh; /* 화면 전체 높이를 차지하도록 설정 */
   }
 
-h1, p {
-  text-align:center;
-}
+
  .center-form {
   display: flex;
   justify-content: center;
