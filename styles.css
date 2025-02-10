@@ -28,6 +28,7 @@ body {
 }
 .button:hover {
   background-color: darkblue;
+}
   @media screen and (max-width: 768px) {
     body {
       background-size: contain; /* 작은 화면에서는 이미지가 전체 화면을 채우지 않도록 설정 */
