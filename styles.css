@@ -2,6 +2,7 @@ body {
     margin: 0;
     justify-content: center;
     align-items: center;
+    display: flex;
     padding: 0;
     background: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), 
                 url('images/design_from_scratch_0210094912.jpg'); /* 배경 이미지 경로 입력 및 불투명도 조절. 0.5는 불투명도를 의미하며, 0.0은 완전히 투명, 1.0은 완전히 불투명합니다.*/
