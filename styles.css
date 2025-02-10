@@ -10,7 +10,7 @@ body {
     background-attachment: fixed; 
     height: 100vh; /* 화면 전체 높이를 차지하도록 설정 */
   }
-/*
+
   h1, p {
     text-align: center;
   }
@@ -18,8 +18,9 @@ body {
   form {
     display: block;
     text-align: center;
+    margin-top: 20px
   }
-    */
+  
 .button {
   display: inline-block;
   padding: 10px 20px;
