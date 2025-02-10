@@ -1,8 +1,5 @@
 body {
     margin: 0;
-    justify-content: center;
-    align-items: center;
-    display: flex;
     padding: 0;
     background: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), 
                 url('images/design_from_scratch_0210094912.jpg'); /* 배경 이미지 경로 입력 및 불투명도 조절. 0.5는 불투명도를 의미하며, 0.0은 완전히 투명, 1.0은 완전히 불투명합니다.*/
@@ -12,22 +9,8 @@ body {
     background-attachment: fixed; 
     height: 100vh; /* 화면 전체 높이를 차지하도록 설정 */
   }
-  .container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;}
-form {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-}
-  .content {
-    position: relative; /* 콘텐츠를 배경 이미지 위에 표시 */
-    z-index: 1; /* 콘텐츠가 배경 이미지 위에 오도록 설정 */
-    color: black; /* 텍스트 색상을 설정 */
-    padding: 20px
-  }
+
+
  .center-form {
   display: flex;
   justify-content: center;
@@ -42,9 +25,9 @@ form {
   text-decoration: none;
   border-radius: 5px;
 }
-/*.button:hover {
+.button:hover {
   background-color: darkblue;
-}*/
+}
   @media screen and (max-width: 768px) {
     body {
       background-size: contain; /* 작은 화면에서는 이미지가 전체 화면을 채우지 않도록 설정 */
