@@ -11,7 +11,13 @@ body {
     height: 100vh; /* 화면 전체 높이를 차지하도록 설정 */
   }
 
-
+  h1, p {
+    text-align: center;
+  }
+  
+  form {
+    display: block;
+    text-align: center;
  
 .button {
   display: inline-block;
