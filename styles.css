@@ -2,7 +2,7 @@ body {
     margin: 0;
     padding: 0;
     background: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), 
-                url('design_from_scratch_0210094912.jpg'); /* 배경 이미지 경로 입력 및 불투명도 조절. 0.5는 불투명도를 의미하며, 0.0은 완전히 투명, 1.0은 완전히 불투명합니다.*/
+                url('Choryang/design_from_scratch_0210094912.jpg'); /* 배경 이미지 경로 입력 및 불투명도 조절. 0.5는 불투명도를 의미하며, 0.0은 완전히 투명, 1.0은 완전히 불투명합니다.*/
     background-size: cover; /* 이미지가 화면을 꽉 채우도록 설정 */
     background-position: center; /* 이미지가 화면의 중앙에 위치하도록 설정 */
     background-repeat: no-repeat; /* 이미지가 반복되지 않도록 설정 */
