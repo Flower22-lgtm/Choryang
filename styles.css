@@ -22,7 +22,7 @@ body {
     overflow: hidden; /* 스크롤이 필요할 때 자동으로 생성 */
     word-wrap: break-word; 
     position: relative; 
-    top: -20px;
+    top: -5px;
 }
 
 /*.title {
