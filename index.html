@@ -12,6 +12,12 @@
             -ms-user-select: none; /* Internet Explorer/Edge */
             user-select: none; /* 지원되는 브라우저에서 텍스트 선택 불가 */
         }
+    .allow-copy {
+            -webkit-user-select: text; /* Safari */
+            -moz-user-select: text; /* Firefox */
+            -ms-user-select: text; /* Internet Explorer/Edge */
+            user-select: text; /* Chrome, Opera, Firefox 등에서 텍스트 선택 가능 */
+        }
     </style>
 </head>
 <body>
@@ -24,16 +30,18 @@
     page1
   </p>
  
-  <form action="next.html" class="center-form" >
+  <form action="next.html" class="center-form allow-copy" >
     <button type="submit" class="button">next</button>
   </form>
  <script>
-       document.addEventListener('touchstart', function(event) {
-            event.preventDefault();
-        }, {passive: false});
-   
-        document.oncopy = function(event) {
-            event.preventDefault();
+       document.oncopy = function(event) {
+            const selection = window.getSelection();
+            const element = selection.anchorNode.parentNode;
+
+            // 특정 요소에서만 복사 허용
+            if (!element.classList.contains('allow-copy')) {
+                event.preventDefault();
+            }
         };
     </script>
 </body>
