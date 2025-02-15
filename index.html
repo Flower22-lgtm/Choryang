@@ -28,6 +28,10 @@
     <button type="submit" class="button">next</button>
   </form>
  <script>
+       document.addEventListener('touchstart', function(event) {
+            event.preventDefault();
+        }, {passive: false});
+   
         document.oncopy = function(event) {
             event.preventDefault();
         };
