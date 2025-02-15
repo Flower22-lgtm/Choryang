@@ -5,6 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Welcome to Choryang History Gallery</title>
   <link rel="stylesheet" href="styles.css">
+   <style>
+        body {
+            -webkit-user-select: none; /* Safari */
+            -moz-user-select: none; /* Firefox */
+            -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* 지원되는 브라우저에서 텍스트 선택 불가 */
+        }
+    </style>
 </head>
 <body>
   <h1>You can find english translation in this site!</h1>
@@ -16,6 +24,16 @@
   <form action="next.html" class="center-form" >
     <button type="submit" class="button">previous</button>
   </form>
- 
+ <script>
+        // 모바일 브라우저에서 복사 방지
+        document.addEventListener('touchstart', function(event) {
+            event.preventDefault();
+        }, {passive: false});
+
+        // 일반 복사 방지
+        document.oncopy = function(event) {
+            event.preventDefault();
+        };
+    </script>
 </body>
 </html>
