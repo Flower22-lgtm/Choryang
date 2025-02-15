@@ -12,6 +12,12 @@
             -ms-user-select: none; /* Internet Explorer/Edge */
             user-select: none; /* Chrome, Opera, Firefox 등에서 텍스트 선택 불가 */
         }
+    .allow-copy {
+            -webkit-user-select: text; /* Safari */
+            -moz-user-select: text; /* Firefox */
+            -ms-user-select: text; /* Internet Explorer/Edge */
+            user-select: text; /* Chrome, Opera, Firefox 등에서 텍스트 선택 가능 */
+        }
     </style>
   <style>
         .button-container {
@@ -30,21 +36,22 @@
 
     
   <form action="index.html"  >
-    <button type="submit" class="button">previous</button>
+    <button type="submit" class="center-form allow-copy">previous</button>
   </form>
     <form action="last.html"  >
-    <button type="submit" class="button">next</button>
+    <button type="submit" class="center-form allow-copy">next</button>
   </form>
   </div>
 <script>
         // 모바일 브라우저에서 복사 방지
-        document.addEventListener('touchstart', function(event) {
-            event.preventDefault();
-        }, {passive: false});
+       document.oncopy = function(event) {
+            const selection = window.getSelection();
+            const element = selection.anchorNode.parentNode;
 
-        // 일반 복사 방지
-        document.oncopy = function(event) {
-            event.preventDefault();
+            // 특정 요소에서만 복사 허용
+            if (!element.classList.contains('allow-copy')) {
+                event.preventDefault();
+            }
         };
     </script>
 </body>
