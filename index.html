@@ -20,17 +20,30 @@
         }
     </style>
   <script>
+ function handleOrientationChange() {
     if (window.innerHeight > window.innerWidth) {
-    // 세로 모드인 경우
-    document.body.style.transform = 'rotate(0deg)';
-} else {
-    // 가로 모드인 경우
-    document.body.style.transform = 'rotate(90deg)';
-    document.body.style.width = window.innerHeight + 'px';
-    document.body.style.height = window.innerWidth + 'px';
-    document.body.style.transformOrigin = 'top left';
-    document.body.style.overflow = 'hidden';
+        // 세로 모드인 경우
+        document.body.style.transform = 'rotate(0deg)';
+        document.body.style.width = '100%';
+        document.body.style.height = '100%';
+        document.body.style.transformOrigin = 'center';
+        document.body.style.overflow = 'hidden';
+    } else {
+        // 가로 모드인 경우
+        document.body.style.transform = 'rotate(90deg)';
+        document.body.style.width = window.innerHeight + 'px';
+        document.body.style.height = window.innerWidth + 'px';
+        document.body.style.transformOrigin = 'center';
+        document.body.style.overflow = 'hidden';
+    }
 }
+
+// 초기 로드 시 실행
+handleOrientationChange();
+
+// 화면 회전 시 실행
+window.addEventListener('resize', handleOrientationChange);
+
   </script>
 </head>
 <body>
