@@ -1,4 +1,4 @@
-body.last {  /*초량 복개천*/
+html.last {  /*초량 복개천*/
     margin: 0;
     padding: 0;
 
@@ -11,7 +11,7 @@ body.last {  /*초량 복개천*/
     height: 100vh; /* 화면 전체 높이를 차지하도록 설정 */
     overflow-x: hidden; /*가로 금지*/
   }
-body.next {   /*1915년도 동구 전경*/
+html.next {   /*1915년도 동구 전경*/
     margin: 0;
     padding: 0;
 
@@ -24,7 +24,7 @@ body.next {   /*1915년도 동구 전경*/
     height: 100vh; /* 화면 전체 높이를 차지하도록 설정 */
     overflow-x: hidden; /*가로 금지*/
   }
-body.index {  /*1890년대 중반 초량해안*/
+html.index {  /*1890년대 중반 초량해안*/
     margin: 0;
     padding: 0;
 
