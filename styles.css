@@ -55,7 +55,7 @@ html.index {  /*1890년대 중반 초량해안*/
     position: fixed; /* 화면에 고정 */
     bottom: 0; /* 화면의 밑 부분에 위치 */
     width: 100%; /* 화면 전체 폭을 차지 */
-    background-color: #333;
+    background-color: rgba(0, 0, 0, 0);
     color: white;
     text-align: center;
     padding: 10px 0;
