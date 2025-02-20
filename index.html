@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <title>Welcome to Choryang History Gallery</title>
   <link rel="stylesheet" type="text/css" href="styles.css">
-  <style>
+  <style>   /*텍스트 복사 불가*/
         body {
             -webkit-user-select: none; /* Safari */
             -moz-user-select: none; /* Firefox */
@@ -22,7 +22,7 @@
   font-size: 1.5em; /* 기본 글자 크기의 1.5배 */
 }
     </style>
-  <script>
+  <script>   /*가로 모드 재상 불가하도록 설정  --> 결국 안 됨*/
  function handleOrientationChange() {
     if (window.innerHeight > window.innerWidth) {
         // 세로 모드인 경우
@@ -50,6 +50,7 @@ window.addEventListener('resize', handleOrientationChange);
   </script>
 </head>
 <body class = "index">
+  <div class = "overlay">
   <div class = "highlighted" >
      <h1>
            Beach of the White Sand and Green Pine!</h1>
@@ -66,7 +67,7 @@ window.addEventListener('resize', handleOrientationChange);
   <form action="next.html" class="center-form allow-copy" >
     <button type="submit" class="button">next</button>
   </form>
- <script>
+ <script>   /*글자 복사 제한하자 버튼 클릭이 안 되는 문제점 보완*/
        document.oncopy = function(event) {
             const selection = window.getSelection();
             const element = selection.anchorNode.parentNode;
@@ -77,5 +78,6 @@ window.addEventListener('resize', handleOrientationChange);
             }
         };
     </script>
+  </div>
 </body>
 </html>
