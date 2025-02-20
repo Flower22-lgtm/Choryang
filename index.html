@@ -18,6 +18,9 @@
             -ms-user-select: text; /* Internet Explorer/Edge */
             user-select: text; /* Chrome, Opera, Firefox 등에서 텍스트 선택 가능 */
         }
+    .large-text {
+  font-size: 1.5em; /* 기본 글자 크기의 1.5배 */
+}
     </style>
   <script>
  function handleOrientationChange() {
@@ -43,9 +46,7 @@ handleOrientationChange();
 
 // 화면 회전 시 실행
 window.addEventListener('resize', handleOrientationChange);
-.large-text {
-  font-size: 1.5em; /* 기본 글자 크기의 1.5배 */
-}
+
   </script>
 </head>
 <body class = "index">
