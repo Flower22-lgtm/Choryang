@@ -70,7 +70,11 @@ html.index {  /*1890년대 중반 초량해안*/
   h1, p {
     text-align: center;
   }
-  
+ .button-container {
+    display: flex; /* Flexbox 사용 */
+    justify-content: space-between; /* 버튼을 양 옆에 배치 */
+    padding: 20px;
+ }
   form {
     display: flex;    /*display: block;*/
     justify-content: center;
